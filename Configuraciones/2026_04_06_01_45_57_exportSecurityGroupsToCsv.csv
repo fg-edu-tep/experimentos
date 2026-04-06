@@ -1,0 +1,5 @@
+GroupId,GroupName,VpcId,Description,OwnerId,InboundRulesCount,OutboundRulesCount,Tags
+sg-061ad2b3e6f4f9503,bite-redis-sg,vpc-03e2a1054aa18f0e2,BITE Redis cache,762646096476,1,1,
+sg-01c469be579b7c31a,bite-web-sg,vpc-03e2a1054aa18f0e2,BITE Django web app,762646096476,2,1,
+sg-0ec10ffe7dc881df4,bite-db-sg,vpc-03e2a1054aa18f0e2,bite-db-sg,762646096476,1,1,
+sg-096d768808cc95336,default,vpc-03e2a1054aa18f0e2,default VPC security group,762646096476,1,1,
