@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Latency Experiment">
@@ -31,8 +33,8 @@
         </CSVDataSet>
         <hashTree/>
         <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Defaults">
-          <stringProp name="HTTPSampler.domain">100.54.102.15</stringProp>
-          <stringProp name="HTTPSampler.port">8000</stringProp>
+          <stringProp name="HTTPSampler.domain">bite-latency-alb-837806176.us-east-1.elb.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.port">80</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments">

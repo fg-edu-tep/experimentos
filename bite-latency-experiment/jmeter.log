@@ -408,3 +408,563 @@
 2026-04-05 05:18:10,553 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
 2026-04-05 05:18:10,553 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
 2026-04-05 05:18:10,553 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 16:50:04,385 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 16:50:04,386 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 16:50:04,387 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 16:50:04,432 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 16:50:04,432 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 16:50:04,432 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 16:50:04,433 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 16:50:04,433 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 16:50:04,433 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 16:50:04,437 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 16:50:04,437 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 16:50:04,948 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 16:50:05,444 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 16:50:05,933 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 16:50:06,433 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 16:50:06,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 16:50:07,433 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 16:50:07,933 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 16:50:08,433 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 16:50:08,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 16:50:09,435 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 16:50:09,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 16:50:10,435 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 16:50:10,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 16:50:11,434 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 16:50:11,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 16:50:12,434 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 16:50:12,934 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 16:50:13,433 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 16:50:13,933 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 16:50:17,923 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 16:50:17,923 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 16:50:22,765 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 16:50:22,765 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 16:50:24,612 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 16:50:24,612 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 16:50:24,809 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 16:50:24,810 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 16:50:29,879 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 16:50:29,879 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 16:50:30,453 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 16:50:30,453 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 16:50:30,825 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 16:50:30,825 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 16:50:31,369 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 16:50:31,370 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 16:50:33,302 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 16:50:33,302 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 16:50:34,436 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 16:50:34,436 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 16:50:34,719 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 16:50:34,719 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 16:50:34,895 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 16:50:34,895 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 16:50:35,032 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 16:50:35,032 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 16:50:35,157 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 16:50:35,157 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 16:50:35,203 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 16:50:35,203 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 16:50:35,435 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 16:50:35,435 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 16:50:35,931 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 16:50:35,931 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 16:50:36,995 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 16:50:36,995 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 16:50:38,332 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 16:50:38,332 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 16:50:42,095 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 16:50:42,095 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 16:50:42,096 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 16:50:42,096 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 16:50:42,096 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 16:53:57,090 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 16:53:57,090 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 16:53:57,091 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 16:53:57,130 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 16:53:57,130 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 16:53:57,130 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 16:53:57,130 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 16:53:57,131 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 16:53:57,131 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 16:53:57,133 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 16:53:57,133 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 16:53:57,631 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 16:53:58,131 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 16:53:58,630 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 16:53:59,130 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 16:53:59,630 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 16:54:00,131 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 16:54:00,631 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 16:54:01,131 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 16:54:01,633 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 16:54:02,133 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 16:54:02,632 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 16:54:03,132 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 16:54:03,632 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 16:54:04,132 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 16:54:04,632 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 16:54:05,132 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 16:54:05,631 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 16:54:06,130 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 16:54:06,631 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 16:54:12,988 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 16:54:12,988 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 16:54:14,397 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 16:54:14,397 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 16:54:14,524 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 16:54:14,524 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 16:54:16,858 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 16:54:16,858 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 16:54:17,393 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 16:54:17,393 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 16:54:18,499 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 16:54:18,499 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 16:54:19,610 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 16:54:19,610 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 16:54:20,720 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 16:54:20,721 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 16:54:21,225 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 16:54:21,225 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 16:54:22,305 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 16:54:22,305 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 16:54:23,103 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 16:54:23,103 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 16:54:23,172 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 16:54:23,172 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 16:54:23,923 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 16:54:23,923 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 16:54:23,926 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 16:54:23,926 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 16:54:24,877 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 16:54:24,877 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 16:54:25,728 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 16:54:25,729 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 16:54:26,552 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 16:54:26,552 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 16:54:29,370 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 16:54:29,370 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 16:54:30,400 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 16:54:30,400 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 16:54:34,540 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 16:54:34,541 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 16:54:34,541 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 16:54:34,541 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 16:54:34,541 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 17:22:18,145 INFO o.a.j.g.a.Load: Loading file: C:\Users\alejo\OneDrive - Universidad de los Andes\Escritorio\Universidad\2026-1\Arquitectura y Diseño de Software\Sprint 2\experimentos\bite-latency-experiment\jmeter\latency-report-only-aws.jmx
+2026-04-06 17:22:18,146 INFO o.a.j.s.FileServer: Set new base='C:\Users\alejo\OneDrive - Universidad de los Andes\Escritorio\Universidad\2026-1\Arquitectura y Diseño de Software\Sprint 2\experimentos\bite-latency-experiment\jmeter'
+2026-04-06 17:22:18,146 INFO o.a.j.s.SaveService: Loading file: C:\Users\alejo\OneDrive - Universidad de los Andes\Escritorio\Universidad\2026-1\Arquitectura y Diseño de Software\Sprint 2\experimentos\bite-latency-experiment\jmeter\latency-report-only-aws.jmx
+2026-04-06 17:22:18,256 INFO o.a.j.s.FileServer: Set new base='C:\Users\alejo\OneDrive - Universidad de los Andes\Escritorio\Universidad\2026-1\Arquitectura y Diseño de Software\Sprint 2\experimentos\bite-latency-experiment\jmeter'
+2026-04-06 17:47:45,709 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 17:47:45,709 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 17:47:45,709 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 17:47:45,750 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 17:47:45,751 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 17:47:45,751 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 17:47:45,751 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 17:47:45,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 17:47:45,752 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 17:47:45,753 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 17:47:45,753 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 17:47:46,265 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 17:47:46,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 17:47:47,253 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 17:47:47,753 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 17:47:48,252 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 17:47:48,751 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 17:47:49,254 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 17:47:49,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 17:47:50,252 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 17:47:50,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 17:47:51,252 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 17:47:51,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 17:47:52,252 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 17:47:52,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 17:47:53,252 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 17:47:53,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 17:47:54,253 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 17:47:54,752 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 17:47:55,251 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 17:48:01,371 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 17:48:01,371 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 17:48:02,587 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 17:48:02,587 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 17:48:05,692 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 17:48:05,692 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 17:48:06,041 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 17:48:06,041 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 17:48:06,238 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 17:48:06,238 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 17:48:07,758 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 17:48:07,758 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 17:48:08,397 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 17:48:08,397 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 17:48:09,334 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 17:48:09,334 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 17:48:09,866 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 17:48:09,866 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 17:48:10,314 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 17:48:10,314 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 17:48:11,001 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 17:48:11,001 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 17:48:11,013 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 17:48:11,013 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 17:48:13,278 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 17:48:13,279 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 17:48:15,366 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 17:48:15,367 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 17:48:15,776 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 17:48:15,776 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 17:48:16,408 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 17:48:16,409 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 17:48:17,517 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 17:48:17,518 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 17:48:18,833 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 17:48:18,833 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 17:48:19,046 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 17:48:19,046 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 17:48:23,073 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 17:48:23,073 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 17:48:23,074 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 17:48:23,074 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 17:48:23,074 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 17:49:48,229 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 17:49:48,230 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 17:49:48,230 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 17:49:48,260 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 17:49:48,260 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 17:49:48,260 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 17:49:48,260 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 17:49:48,262 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 17:49:48,262 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 17:49:48,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 17:49:48,264 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 17:49:48,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 17:49:49,261 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 17:49:49,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 17:49:50,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 17:49:50,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 17:49:51,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 17:49:51,763 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 17:49:52,264 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 17:49:52,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 17:49:53,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 17:49:53,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 17:49:54,264 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 17:49:54,764 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 17:49:55,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 17:49:55,763 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 17:49:56,264 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 17:49:56,763 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 17:49:57,263 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 17:49:57,763 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 17:50:02,198 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 17:50:02,198 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 17:50:06,839 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 17:50:06,840 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 17:50:07,351 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 17:50:07,351 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 17:50:08,503 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 17:50:08,503 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 17:50:08,894 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 17:50:08,895 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 17:50:08,949 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 17:50:08,949 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 17:50:11,623 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 17:50:11,624 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 17:50:12,060 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 17:50:12,061 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 17:50:12,464 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 17:50:12,464 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 17:50:13,949 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 17:50:13,949 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 17:50:13,977 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 17:50:13,977 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 17:50:14,114 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 17:50:14,114 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 17:50:14,991 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 17:50:14,991 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 17:50:15,352 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 17:50:15,352 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 17:50:15,400 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 17:50:15,400 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 17:50:17,022 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 17:50:17,022 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 17:50:18,424 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 17:50:18,424 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 17:50:18,978 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 17:50:18,978 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 17:50:19,278 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 17:50:19,278 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 17:50:21,717 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 17:50:21,717 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 17:50:21,717 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 17:50:21,717 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 17:50:21,717 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 18:39:54,524 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 18:39:54,526 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 18:39:54,527 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 18:39:54,571 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 18:39:54,571 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 18:39:54,571 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 18:39:54,571 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 18:39:54,573 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 18:39:54,573 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:39:54,574 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 18:39:54,574 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 18:39:55,072 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 18:39:55,572 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 18:39:56,073 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 18:39:56,573 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 18:39:57,072 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 18:39:57,573 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 18:39:58,073 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 18:39:58,572 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 18:39:59,072 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 18:39:59,572 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 18:40:00,072 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 18:40:00,572 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 18:40:01,072 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 18:40:01,572 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 18:40:02,074 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 18:40:02,574 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 18:40:03,074 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 18:40:03,573 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 18:40:04,073 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 18:40:15,193 INFO o.a.j.g.a.Start: Stopping test
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-8
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-7
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-1
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-5
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-15
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-6
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-2
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-10
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-16
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-13
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-14
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-19
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-4
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-20
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-12
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-3
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-9
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-11
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-17
+2026-04-06 18:40:15,238 INFO o.a.j.t.JMeterThread: Stopping: Latency Experiment 1-18
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 18:40:15,241 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 18:40:15,242 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 18:40:15,241 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 18:40:15,242 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 18:40:15,242 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:40:15,243 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 18:41:00,329 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 18:41:00,329 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 18:41:00,330 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 18:41:00,374 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 18:41:00,374 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 18:41:00,375 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 18:41:00,375 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 18:41:00,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 18:41:00,376 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:41:00,377 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 18:41:00,377 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 18:41:00,886 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 18:41:01,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 18:41:01,876 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 18:41:02,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 18:41:02,876 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 18:41:03,375 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 18:41:03,876 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 18:41:04,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 18:41:04,877 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 18:41:05,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 18:41:05,876 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 18:41:06,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 18:41:06,875 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 18:41:07,375 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 18:41:07,877 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 18:41:08,376 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 18:41:08,875 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 18:41:09,375 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 18:41:09,876 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 18:41:12,466 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 18:41:12,466 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 18:41:13,997 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 18:41:13,997 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 18:41:18,285 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 18:41:18,286 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 18:41:19,393 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 18:41:19,393 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 18:41:21,393 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 18:41:21,393 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 18:41:22,223 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 18:41:22,223 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 18:41:23,311 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 18:41:23,311 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 18:41:23,388 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 18:41:23,388 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 18:41:23,713 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 18:41:23,713 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 18:41:24,692 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 18:41:24,692 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 18:41:24,830 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 18:41:24,830 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 18:41:25,255 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 18:41:25,255 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 18:41:26,095 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 18:41:26,095 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 18:41:29,065 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 18:41:29,065 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 18:41:29,773 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 18:41:29,774 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 18:41:30,276 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 18:41:30,276 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 18:41:32,780 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 18:41:32,780 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 18:41:35,933 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 18:41:35,933 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 18:41:39,236 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 18:41:39,237 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 18:41:40,889 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 18:41:40,889 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 18:41:40,889 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 18:41:40,890 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:41:40,890 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 18:43:17,691 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-06 18:43:17,691 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-06 18:43:17,691 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-06 18:43:17,717 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Latency Experiment
+2026-04-06 18:43:17,717 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Latency Experiment.
+2026-04-06 18:43:17,717 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-06 18:43:17,717 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=10 delayedStart=false
+2026-04-06 18:43:17,718 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-1
+2026-04-06 18:43:17,718 INFO o.a.j.s.FileServer: Stored: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:43:17,720 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-06 18:43:17,720 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-06 18:43:18,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-2
+2026-04-06 18:43:18,717 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-3
+2026-04-06 18:43:19,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-4
+2026-04-06 18:43:19,718 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-5
+2026-04-06 18:43:20,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-6
+2026-04-06 18:43:20,717 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-7
+2026-04-06 18:43:21,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-8
+2026-04-06 18:43:21,719 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-9
+2026-04-06 18:43:22,217 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-10
+2026-04-06 18:43:22,718 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-11
+2026-04-06 18:43:23,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-12
+2026-04-06 18:43:23,717 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-13
+2026-04-06 18:43:24,217 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-14
+2026-04-06 18:43:24,717 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-15
+2026-04-06 18:43:25,219 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-16
+2026-04-06 18:43:25,719 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-17
+2026-04-06 18:43:26,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-18
+2026-04-06 18:43:26,718 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-19
+2026-04-06 18:43:27,218 INFO o.a.j.t.JMeterThread: Thread started: Latency Experiment 1-20
+2026-04-06 18:43:33,610 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-4
+2026-04-06 18:43:33,610 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-4
+2026-04-06 18:43:37,123 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-13
+2026-04-06 18:43:37,123 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-13
+2026-04-06 18:43:37,667 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-3
+2026-04-06 18:43:37,667 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-3
+2026-04-06 18:43:38,137 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-5
+2026-04-06 18:43:38,137 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-5
+2026-04-06 18:43:38,666 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-1
+2026-04-06 18:43:38,667 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-1
+2026-04-06 18:43:39,997 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-17
+2026-04-06 18:43:39,997 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-17
+2026-04-06 18:43:40,976 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-8
+2026-04-06 18:43:40,976 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-8
+2026-04-06 18:43:42,637 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-7
+2026-04-06 18:43:42,637 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-7
+2026-04-06 18:43:43,096 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-2
+2026-04-06 18:43:43,096 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-2
+2026-04-06 18:43:43,227 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-6
+2026-04-06 18:43:43,227 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-6
+2026-04-06 18:43:43,428 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-11
+2026-04-06 18:43:43,428 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-11
+2026-04-06 18:43:44,666 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-20
+2026-04-06 18:43:44,666 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-20
+2026-04-06 18:43:45,029 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-18
+2026-04-06 18:43:45,029 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-18
+2026-04-06 18:43:45,303 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-14
+2026-04-06 18:43:45,303 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-14
+2026-04-06 18:43:45,931 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-15
+2026-04-06 18:43:45,931 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-15
+2026-04-06 18:43:47,227 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-9
+2026-04-06 18:43:47,228 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-9
+2026-04-06 18:43:47,421 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-12
+2026-04-06 18:43:47,421 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-12
+2026-04-06 18:43:48,696 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-16
+2026-04-06 18:43:48,696 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-16
+2026-04-06 18:43:49,856 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-10
+2026-04-06 18:43:49,856 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-10
+2026-04-06 18:43:50,708 INFO o.a.j.t.JMeterThread: Thread is done: Latency Experiment 1-19
+2026-04-06 18:43:50,708 INFO o.a.j.t.JMeterThread: Thread finished: Latency Experiment 1-19
+2026-04-06 18:43:50,709 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-06 18:43:50,709 INFO o.a.j.s.FileServer: Close: C:/Users/alejo/OneDrive - Universidad de los Andes/Escritorio/Universidad/2026-1/Arquitectura y Diseño de Software/Sprint 2/experimentos/bite-latency-experiment/jmeter/report_requests_small.csv
+2026-04-06 18:43:50,709 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-06 20:14:08,913 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[#49,AWT-EventQueue-0,6,main]
+java.lang.NullPointerException: Cannot invoke "javax.swing.table.JTableHeader.repaint(java.awt.Rectangle)" because "this.header" is null
+	at com.github.weisj.darklaf.ui.table.header.DarkTableHeaderUI.lambda$paint$0(DarkTableHeaderUI.java:157) ~[darklaf-core-2.7.3.jar:2.7.3]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
