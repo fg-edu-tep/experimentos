@@ -16,60 +16,19 @@ services:
       timeout: 5s
       retries: 5
 
-  # PostgreSQL Database for Kong
-  kong-database:
-    image: postgres:16-alpine
-    container_name: kong-postgres
-    environment:
-      POSTGRES_DB: kong
-      POSTGRES_USER: kong
-      POSTGRES_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
-    volumes:
-      - kong_data:/var/lib/postgresql/data
-    networks:
-      - bite-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U kong"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
-  # Kong Database Bootstrap
-  kong-migration:
-    image: kong:latest  # <--- Cambiado a latest
-    container_name: kong-migration
-    command: kong migrations bootstrap
-    environment:
-      KONG_DATABASE: postgres
-      KONG_PG_HOST: kong-database
-      KONG_PG_DATABASE: kong
-      KONG_PG_USER: kong
-      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
-    networks:
-      - bite-network
-    depends_on:
-      kong-database:
-        condition: service_healthy
-    restart: on-failure
-
-  # Kong API Gateway
+  # Kong API Gateway (Declarative/DB-less mode)
   kong:
-    image: kong:latest  # <--- Cambiado a latest
+    image: kong:3.8-alpine
     container_name: kong-gateway
     environment:
-      KONG_DATABASE: postgres
-      KONG_PG_HOST: kong-database
-      KONG_PG_DATABASE: kong
-      KONG_PG_USER: kong
-      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
       KONG_PROXY_ACCESS_LOG: /dev/stdout
       KONG_ADMIN_ACCESS_LOG: /dev/stdout
       KONG_PROXY_ERROR_LOG: /dev/stderr
       KONG_ADMIN_ERROR_LOG: /dev/stderr
       KONG_ADMIN_LISTEN: 0.0.0.0:8001
       KONG_PROXY_LISTEN: 0.0.0.0:8000, 0.0.0.0:8443 ssl
-      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
     ports:
       - "8000:8000"   # Kong Proxy HTTP
       - "8443:8443"   # Kong Proxy HTTPS
@@ -80,8 +39,6 @@ services:
     networks:
       - bite-network
     depends_on:
-      kong-migration:
-        condition: service_completed_successfully
       django-app:
         condition: service_started
     restart: unless-stopped
@@ -131,5 +88,4 @@ networks:
 
 volumes:
   redis_data:
-  kong_data:
   static_volume:
