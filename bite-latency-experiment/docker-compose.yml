@@ -1,9 +1,4 @@
-version: '3.8'
-
 services:
-  # Note: Using external PostgreSQL database specified in .env (DB_HOST)
-  # Local PostgreSQL service has been disabled
-
   # Redis Cache
   redis:
     image: redis:7-alpine
@@ -42,7 +37,7 @@ services:
 
   # Kong Database Bootstrap
   kong-migration:
-    image: kong:3.8-alpine
+    image: kong:3.7-alpine
     container_name: kong-migration
     command: kong migrations bootstrap
     environment:
@@ -60,7 +55,7 @@ services:
 
   # Kong API Gateway
   kong:
-    image: kong:3.8-alpine
+    image: kong:3.7-alpine
     container_name: kong-gateway
     environment:
       KONG_DATABASE: postgres
