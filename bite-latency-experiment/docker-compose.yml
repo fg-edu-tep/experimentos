@@ -1,26 +1,8 @@
 version: '3.8'
 
 services:
-  # PostgreSQL Database for Django Application
-  postgres:
-    image: postgres:16-alpine
-    container_name: bite-postgres
-    environment:
-      POSTGRES_DB: ${DB_NAME:-bite_latency}
-      POSTGRES_USER: ${DB_USER:-bite_user}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-bite_pass}
-    ports:
-      - "${DB_PORT:-5434}:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - bite-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-bite_user}"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+  # Note: Using external PostgreSQL database specified in .env (DB_HOST)
+  # Local PostgreSQL service has been disabled
 
   # Redis Cache
   redis:
@@ -120,7 +102,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bite-django
-    command: gunicorn config.wsgi:application --bind 0.0.0.0:8080 --workers 4 --timeout 120
     environment:
       SECRET_KEY: ${SECRET_KEY}
       DEBUG: ${DEBUG:-False}
@@ -128,8 +109,8 @@ services:
       DB_NAME: ${DB_NAME:-bite_latency}
       DB_USER: ${DB_USER:-bite_user}
       DB_PASSWORD: ${DB_PASSWORD:-bite_pass}
-      DB_HOST: postgres
-      DB_PORT: 5432
+      DB_HOST: ${DB_HOST:-postgres}
+      DB_PORT: ${DB_PORT:-5432}
       REDIS_URL: redis://redis:6379
     ports:
       - "8080:8080"
@@ -142,6 +123,7 @@ services:
       redis:
         condition: service_healthy
     restart: unless-stopped
+    entrypoint: /bin/sh -c "python manage.py migrate --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:8080 --workers 4 --timeout 120"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/api/health/"]
       interval: 30s
@@ -153,7 +135,6 @@ networks:
     driver: bridge
 
 volumes:
-  postgres_data:
   redis_data:
   kong_data:
   static_volume:

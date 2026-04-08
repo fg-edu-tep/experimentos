@@ -101,13 +101,30 @@ echo ""
 echo "Waiting for services to be ready..."
 sleep 10
 
-# Check PostgreSQL
-echo "Checking PostgreSQL..."
-docker compose exec -T postgres pg_isready -U ${DB_USER:-bite_user} || {
-    print_error "PostgreSQL is not ready"
+# Check External PostgreSQL connection
+echo "Checking external PostgreSQL connection..."
+docker compose exec -T django-app python -c "
+import psycopg2
+import os
+try:
+    conn = psycopg2.connect(
+        dbname=os.getenv('DB_NAME', 'bite_latency'),
+        user=os.getenv('DB_USER', 'bite_user'),
+        password=os.getenv('DB_PASSWORD', 'bite_pass'),
+        host=os.getenv('DB_HOST', '127.0.0.1'),
+        port=os.getenv('DB_PORT', '5434')
+    )
+    conn.close()
+    print('Connected successfully')
+except Exception as e:
+    print(f'Connection failed: {e}')
+    exit(1)
+" || {
+    print_error "Cannot connect to external PostgreSQL database"
+    print_warning "Check your DB_HOST, DB_PORT, and network connectivity in .env"
     exit 1
 }
-print_success "PostgreSQL is ready"
+print_success "External PostgreSQL connection verified"
 
 # Check Redis
 echo "Checking Redis..."
@@ -117,11 +134,10 @@ docker compose exec -T redis redis-cli ping || {
 }
 print_success "Redis is ready"
 
-# Run Django migrations
+# Note: Migrations run automatically on container startup via entrypoint
 echo ""
-echo "Running Django migrations..."
-docker compose exec -T django-app python manage.py migrate --noinput
-print_success "Migrations completed"
+echo "Django migrations will run automatically on container startup"
+print_success "Migration setup configured"
 
 # Create Django superuser (optional - only if environment variables are set)
 if [ ! -z "$DJANGO_SUPERUSER_USERNAME" ] && [ ! -z "$DJANGO_SUPERUSER_PASSWORD" ]; then
