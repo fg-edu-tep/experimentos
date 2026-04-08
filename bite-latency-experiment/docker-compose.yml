@@ -37,7 +37,7 @@ services:
 
   # Kong Database Bootstrap
   kong-migration:
-    image: kong:3.7-alpine
+    image: kong:latest  # <--- Cambiado a latest
     container_name: kong-migration
     command: kong migrations bootstrap
     environment:
@@ -55,7 +55,7 @@ services:
 
   # Kong API Gateway
   kong:
-    image: kong:3.7-alpine
+    image: kong:latest  # <--- Cambiado a latest
     container_name: kong-gateway
     environment:
       KONG_DATABASE: postgres
