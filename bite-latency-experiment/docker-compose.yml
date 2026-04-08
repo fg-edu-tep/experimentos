@@ -1,0 +1,161 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database for Django Application
+  postgres:
+    image: postgres:16-alpine
+    container_name: bite-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME:-bite_latency}
+      POSTGRES_USER: ${DB_USER:-bite_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-bite_pass}
+    ports:
+      - "${DB_PORT:-5434}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - bite-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-bite_user}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: bite-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - bite-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL Database for Kong
+  kong-database:
+    image: postgres:16-alpine
+    container_name: kong-postgres
+    environment:
+      POSTGRES_DB: kong
+      POSTGRES_USER: kong
+      POSTGRES_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
+    volumes:
+      - kong_data:/var/lib/postgresql/data
+    networks:
+      - bite-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kong"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Kong Database Bootstrap
+  kong-migration:
+    image: kong:3.8-alpine
+    container_name: kong-migration
+    command: kong migrations bootstrap
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_DATABASE: kong
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
+    networks:
+      - bite-network
+    depends_on:
+      kong-database:
+        condition: service_healthy
+    restart: on-failure
+
+  # Kong API Gateway
+  kong:
+    image: kong:3.8-alpine
+    container_name: kong-gateway
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_DATABASE: kong
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: ${KONG_PG_PASSWORD:-kongpass}
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_PROXY_LISTEN: 0.0.0.0:8000, 0.0.0.0:8443 ssl
+      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
+    ports:
+      - "8000:8000"   # Kong Proxy HTTP
+      - "8443:8443"   # Kong Proxy HTTPS
+      - "8001:8001"   # Kong Admin API HTTP
+      - "8444:8444"   # Kong Admin API HTTPS
+    volumes:
+      - ./kong/kong.yml:/usr/local/kong/declarative/kong.yml:ro
+    networks:
+      - bite-network
+    depends_on:
+      kong-migration:
+        condition: service_completed_successfully
+      django-app:
+        condition: service_started
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "kong", "health"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  # Django Application with Gunicorn
+  django-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bite-django
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8080 --workers 4 --timeout 120
+    environment:
+      SECRET_KEY: ${SECRET_KEY}
+      DEBUG: ${DEBUG:-False}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1,django-app}
+      DB_NAME: ${DB_NAME:-bite_latency}
+      DB_USER: ${DB_USER:-bite_user}
+      DB_PASSWORD: ${DB_PASSWORD:-bite_pass}
+      DB_HOST: postgres
+      DB_PORT: 5432
+      REDIS_URL: redis://redis:6379
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - static_volume:/app/static
+    networks:
+      - bite-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/health/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  bite-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  kong_data:
+  static_volume:

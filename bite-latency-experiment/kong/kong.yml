@@ -1,0 +1,225 @@
+_format_version: "3.0"
+_transform: true
+
+# Kong Declarative Configuration
+# This configuration sets up Kong API Gateway with key-auth plugin
+# for the Bite Latency Experiment Django application
+
+services:
+  # Django Application Service
+  - name: bite-latency-api
+    url: http://django-app:8080
+    protocol: http
+    host: django-app
+    port: 8080
+    path: /
+    retries: 5
+    connect_timeout: 60000
+    write_timeout: 60000
+    read_timeout: 60000
+    tags:
+      - django
+      - bite-latency
+
+    # Routes for the Django API
+    routes:
+      # Health check endpoint (no authentication required)
+      - name: health-check
+        paths:
+          - /api/health
+        methods:
+          - GET
+        strip_path: false
+        preserve_host: false
+        tags:
+          - health
+
+      # Report endpoint (requires authentication)
+      - name: get-report
+        paths:
+          - /api/report
+        methods:
+          - GET
+        strip_path: false
+        preserve_host: false
+        tags:
+          - reports
+          - authenticated
+        plugins:
+          - name: key-auth
+            config:
+              key_names:
+                - apikey
+                - x-api-key
+              key_in_header: true
+              key_in_query: true
+              key_in_body: false
+              hide_credentials: true
+
+      # Cache clear endpoint (requires authentication)
+      - name: clear-cache
+        paths:
+          - /api/cache/clear
+        methods:
+          - POST
+        strip_path: false
+        preserve_host: false
+        tags:
+          - cache
+          - authenticated
+        plugins:
+          - name: key-auth
+            config:
+              key_names:
+                - apikey
+                - x-api-key
+              key_in_header: true
+              key_in_query: true
+              key_in_body: false
+              hide_credentials: true
+
+      # Django admin (requires authentication)
+      - name: django-admin
+        paths:
+          - /admin
+        strip_path: false
+        preserve_host: false
+        tags:
+          - admin
+          - authenticated
+        plugins:
+          - name: key-auth
+            config:
+              key_names:
+                - apikey
+                - x-api-key
+              key_in_header: true
+              key_in_query: true
+              key_in_body: false
+              hide_credentials: true
+
+    # Global plugins for the service
+    plugins:
+      # Rate limiting to prevent abuse
+      - name: rate-limiting
+        config:
+          minute: 100
+          hour: 1000
+          policy: local
+          fault_tolerant: true
+          hide_client_headers: false
+
+      # Request/Response logging
+      - name: file-log
+        config:
+          path: /tmp/kong-requests.log
+          reopen: true
+
+      # CORS support
+      - name: cors
+        config:
+          origins:
+            - "*"
+          methods:
+            - GET
+            - POST
+            - PUT
+            - PATCH
+            - DELETE
+            - OPTIONS
+          headers:
+            - Accept
+            - Accept-Version
+            - Content-Length
+            - Content-MD5
+            - Content-Type
+            - Date
+            - X-Auth-Token
+            - apikey
+            - x-api-key
+          exposed_headers:
+            - X-Auth-Token
+          credentials: true
+          max_age: 3600
+
+# Consumers (API clients with credentials)
+consumers:
+  # Test consumer for development
+  - username: test-client
+    custom_id: test-001
+    tags:
+      - development
+    keyauth_credentials:
+      - key: test-api-key-12345
+
+  # JMeter load testing consumer
+  - username: jmeter-client
+    custom_id: jmeter-001
+    tags:
+      - testing
+      - jmeter
+    keyauth_credentials:
+      - key: jmeter-load-test-key-67890
+
+  # Production consumer example
+  - username: production-client
+    custom_id: prod-001
+    tags:
+      - production
+    keyauth_credentials:
+      - key: prod-secure-key-CHANGE-THIS-IN-PRODUCTION
+
+  # Monitoring/health check consumer
+  - username: monitoring-client
+    custom_id: monitor-001
+    tags:
+      - monitoring
+    keyauth_credentials:
+      - key: monitor-health-check-key-11111
+
+# Global plugins (apply to all routes)
+plugins:
+  # Request size limiting
+  - name: request-size-limiting
+    config:
+      allowed_payload_size: 10
+      size_unit: megabytes
+
+  # IP restriction (optional - uncomment and configure for production)
+  # - name: ip-restriction
+  #   config:
+  #     allow:
+  #       - 0.0.0.0/0  # Allow all IPs (change in production)
+
+# Upstreams (for load balancing - optional)
+upstreams:
+  - name: django-upstream
+    algorithm: round-robin
+    hash_on: none
+    hash_fallback: none
+    hash_on_cookie_path: /
+    slots: 10000
+    healthchecks:
+      active:
+        healthy:
+          interval: 10
+          successes: 2
+        unhealthy:
+          interval: 10
+          tcp_failures: 3
+          http_failures: 3
+        timeout: 5
+        concurrency: 10
+        http_path: /api/health/
+        https_verify_certificate: false
+      passive:
+        healthy:
+          successes: 5
+        unhealthy:
+          http_failures: 5
+          tcp_failures: 2
+    tags:
+      - django
+    targets:
+      - target: django-app:8080
+        weight: 100
