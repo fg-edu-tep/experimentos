@@ -18,7 +18,7 @@ services:
 
   # Kong API Gateway (Declarative/DB-less mode)
   kong:
-    image: kong:latest  # <--- Cambiado de 3.8-alpine a latest
+    image: kong:latest
     container_name: kong-gateway
     environment:
       KONG_DATABASE: "off"
@@ -57,12 +57,14 @@ services:
     environment:
       SECRET_KEY: ${SECRET_KEY}
       DEBUG: ${DEBUG:-False}
-      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1,django-app,54.83.92.122}
+      # Permite todos los hosts IPv4
+      ALLOWED_HOSTS: '*'
       DB_NAME: ${DB_NAME:-bite_latency}
       DB_USER: ${DB_USER:-bite_user}
       DB_PASSWORD: ${DB_PASSWORD:-bite_pass}
-      DB_HOST: ${DB_HOST:-54.83.92.122} # IP de tu EC2
-      DB_PORT: ${DB_PORT:-5434}        # <--- Cambiado de 5432 a 5434
+      # Conecta al host de la EC2 mediante la IP del puente de Docker
+      DB_HOST: 172.17.0.1
+      DB_PORT: ${DB_PORT:-5434}
       REDIS_URL: redis://redis:6379
     ports:
       - "8080:8080"

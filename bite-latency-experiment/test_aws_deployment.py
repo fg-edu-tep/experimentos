@@ -16,7 +16,7 @@ from typing import Dict, Tuple
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # Configuration
-AWS_HOST = "ec2-13-222-13-14.compute-1.amazonaws.com"
+AWS_HOST = "ec2-3-236-24-59.compute-1.amazonaws.com"
 KONG_PORT = 8000
 KONG_ADMIN_PORT = 8001
 DJANGO_PORT = 8080
