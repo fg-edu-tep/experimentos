@@ -73,9 +73,9 @@ services:
       - static_volume:/app/static
     networks:
       - bite-network
-    depends_on:
-      redis:
-        condition: service_healthy
+    #depends_on:
+    #  redis:
+    #    condition: service_healthy
     restart: unless-stopped
     entrypoint: /bin/sh -c "python manage.py migrate --noinput && gunicorn config.wsgi:application --bind 0.0.0.0:8080 --workers 4 --timeout 120"
     healthcheck:
