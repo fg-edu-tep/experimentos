@@ -1,20 +1,20 @@
 services:
   # Redis Cache
-  redis:
-    image: redis:7-alpine
-    container_name: bite-redis
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis_data:/data
-    networks:
-      - bite-network
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+  ##redis:
+  ##  image: redis:7-alpine
+  ##  container_name: bite-redis
+  ##  ports:
+  ##    - "6379:6379"
+  ##  volumes:
+  ##    - redis_data:/data
+  ##  networks:
+  ##    - bite-network
+  ##  restart: unless-stopped
+  ##  healthcheck:
+  ##    test: ["CMD", "redis-cli", "ping"]
+  ##    interval: 10s
+  ##    timeout: 5s
+  ##    retries: 5
 
   # Kong API Gateway (Declarative/DB-less mode)
   kong:
@@ -89,5 +89,5 @@ networks:
     driver: bridge
 
 volumes:
-  redis_data:
+  # redis_data:
   static_volume:
