@@ -65,7 +65,7 @@ services:
       # Conecta al host de la EC2 mediante la IP del puente de Docker
       DB_HOST: ${DB_HOST:-172.17.0.1}
       DB_PORT: ${DB_PORT:-5434}
-      REDIS_URL: redis://redis:6379
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379}
     ports:
       - "8080:8080"
     volumes:
